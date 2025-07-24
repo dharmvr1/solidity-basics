@@ -1,6 +1,6 @@
 // SPDX-License-Identifier: MIT
-pragma solidity ^0.8.18 ;// this is solidity version
-contract simpleStorage{ 
+pragma solidity ^0.8.24 ;// this is solidity version
+contract SimpleStorage{ 
    uint256    myFavNum;
    
 //   uint256[] listOfFavNum;
@@ -18,7 +18,7 @@ contract simpleStorage{
    listOfPeople.push(Person(_favoriteNum,_name));
    nameToFavNum[_name]=_favoriteNum;
   }
-   function Store(uint256 _favNum)public {
+   function Store(uint256 _favNum)public virtual  {
     myFavNum=_favNum;
    
    }
